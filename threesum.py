@@ -21,13 +21,13 @@ class Solution:
                 if jksum == target:
                     solutions.append([nums[i], nums[j], nums[k]])
 
-                    j =+ 1
+                    j += 1
                     k -= 1
 
                     while j < k and nums[j] == [j- 1]:
                         j += 1
                     while j < k and nums[k] == nums[k + 1]:
-                        k =- 1
+                        k -= 1
                 elif jksum < target:
                     j += 1 
                 else:
